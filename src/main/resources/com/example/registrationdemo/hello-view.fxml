@@ -41,27 +41,27 @@
       </VBox>
       <VBox layoutX="166.0" layoutY="64.0" prefHeight="254.0" prefWidth="175.0">
          <children>
-            <TextField fx:id="firstNameField" promptText="First Name">
+            <TextField fx:id="firstNameField" promptText="First Name" styleClass="text-field-valid">
                <VBox.margin>
                   <Insets />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="lastNameField" promptText="Last Name">
+            <TextField fx:id="lastNameField" promptText="Last Name" styleClass="text-field-valid">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="emailField" promptText="Email">
+            <TextField fx:id="emailField" promptText="Email" styleClass="text-field-valid">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="dateOfBirthField" promptText="DOB">
+            <TextField fx:id="dateOfBirthField" promptText="DOB" styleClass="text-field-valid">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="zipCodeField" promptText="Zip">
+            <TextField fx:id="zipCodeField" promptText="Zip" styleClass="text-field-valid">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
