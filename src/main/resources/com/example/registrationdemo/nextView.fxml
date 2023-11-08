@@ -5,12 +5,10 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="419.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="95.0" layoutY="187.0" prefHeight="17.0" prefWidth="220.0" text="All data is Valid!">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Label>
-   </children>
+<AnchorPane prefHeight="419.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/20.0.1">
+   <Label layoutX="95.0" layoutY="187.0" prefHeight="17.0" prefWidth="220.0" text="All data is Valid!">
+      <font>
+         <Font size="30.0"/>
+      </font>
+   </Label>
 </AnchorPane>
