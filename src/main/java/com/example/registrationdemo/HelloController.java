@@ -14,10 +14,10 @@ import java.io.IOException;
 public class HelloController {
     @FXML
     private TextField firstNameField, lastNameField, emailField, dateOfBirthField, zipCodeField;
-
     @FXML
     private Button addbtn;
-
+    @FXML
+    private Button cancelbtn;
     @FXML
     private Label firstNameErrorLabel, lastNameErrorLabel, emailErrorLabel, dateOfBirthErrorLabel, zipCodeErrorLabel;
 
@@ -81,5 +81,10 @@ public class HelloController {
             }
         }
     });
+        cancelbtn.setOnAction(event -> {
+            Stage stage = (Stage) cancelbtn.getScene().getWindow();
+            stage.close();
+        });
+    }
 }
-}
+
