@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registrationdemo.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registrationdemo.HelloController">
    <children>
       <VBox layoutX="39.0" layoutY="69.0" prefHeight="213.0" prefWidth="126.0">
          <children>
@@ -19,66 +19,85 @@
             </Label>
             <Label text="Last Name : ">
                <VBox.margin>
-                  <Insets left="30.0" top="24.0" />
+                  <Insets left="30.0" top="32.0" />
                </VBox.margin>
             </Label>
             <Label prefHeight="17.0" prefWidth="42.0" text="Email : ">
                <VBox.margin>
-                  <Insets left="30.0" top="29.0" />
+                  <Insets left="30.0" top="32.0" />
                </VBox.margin>
             </Label>
             <Label text="Date of Birth : ">
                <VBox.margin>
-                  <Insets left="30.0" top="29.0" />
+                  <Insets left="30.0" top="32.0" />
                </VBox.margin>
             </Label>
             <Label text="Zip Code : ">
                <VBox.margin>
-                  <Insets left="30.0" top="27.0" />
+                  <Insets left="30.0" top="32.0" />
                </VBox.margin>
             </Label>
          </children>
       </VBox>
-      <VBox layoutX="166.0" layoutY="64.0" prefHeight="254.0" prefWidth="175.0">
-         <children>
-            <TextField fx:id="firstNameField" promptText="First Name" styleClass="text-field-valid">
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
-            </TextField>
-            <TextField fx:id="lastNameField" promptText="Last Name" styleClass="text-field-valid">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-            </TextField>
-            <TextField fx:id="emailField" promptText="Email" styleClass="text-field-valid">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-            </TextField>
-            <TextField fx:id="dateOfBirthField" promptText="DOB" styleClass="text-field-valid">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-            </TextField>
-            <TextField fx:id="zipCodeField" promptText="Zip" styleClass="text-field-valid">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-            </TextField>
-         </children>
+      <VBox layoutX="165.0" layoutY="49.0" prefHeight="254.0" prefWidth="175.0">
+         <Label fx:id="firstNameErrorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0"
+                prefWidth="175.0" textAlignment="CENTER" textFill="#f50303"/>
+         <TextField fx:id="firstNameField" promptText="First Name" styleClass="text-field-valid">
+            <VBox.margin>
+               <Insets/>
+            </VBox.margin>
+         </TextField>
+         <Label fx:id="lastNameErrorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0"
+                prefWidth="175.0" textAlignment="CENTER" textFill="#f50303">
+            <VBox.margin>
+               <Insets top="2.0"/>
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="lastNameField" promptText="Last Name" styleClass="text-field-valid">
+            <VBox.margin>
+               <Insets top="3.0"/>
+            </VBox.margin>
+         </TextField>
+         <Label fx:id="emailErrorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="175.0"
+                textAlignment="CENTER" textFill="#f50303">
+            <VBox.margin>
+               <Insets top="2.0"/>
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="emailField" promptText="Email" styleClass="text-field-valid">
+            <VBox.margin>
+               <Insets top="3.0"/>
+            </VBox.margin>
+         </TextField>
+         <Label fx:id="dateOfBirthErrorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0"
+                prefWidth="175.0" textAlignment="CENTER" textFill="#f50303">
+            <VBox.margin>
+               <Insets top="2.0"/>
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="dateOfBirthField" promptText="DOB" styleClass="text-field-valid">
+            <VBox.margin>
+               <Insets top="3.0"/>
+            </VBox.margin>
+         </TextField>
+         <Label fx:id="zipCodeErrorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="175.0"
+                textAlignment="CENTER" textFill="#f50303">
+            <VBox.margin>
+               <Insets top="2.0"/>
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="zipCodeField" promptText="Zip" styleClass="text-field-valid">
+            <VBox.margin>
+               <Insets top="3.0"/>
+            </VBox.margin>
+         </TextField>
       </VBox>
       <Label layoutX="84.0" text="Registration Form">
          <font>
             <Font size="32.0" />
          </font>
       </Label>
-      <Button fx:id="addbtn" layoutX="102.0" layoutY="291.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Add" />
-      <Button fx:id="cancelbtn" layoutX="240.0" layoutY="291.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Cancel" />
-      <Label fx:id="firstNameErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="47.0" prefHeight="17.0" prefWidth="175.0" textAlignment="CENTER" textFill="#f50303" />
-      <Label fx:id="lastNameErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="90.0" prefHeight="17.0" prefWidth="175.0" textAlignment="CENTER" textFill="#f50303" />
-      <Label fx:id="emailErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="166.0" layoutY="134.0" prefHeight="17.0" prefWidth="175.0" textAlignment="CENTER" textFill="#f50303" />
-      <Label fx:id="dateOfBirthErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="183.0" prefHeight="17.0" prefWidth="175.0" textAlignment="CENTER" textFill="#f50303" />
-      <Label fx:id="zipCodeErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="226.0" prefHeight="17.0" prefWidth="175.0" textAlignment="CENTER" textFill="#f50303" />
+      <Button fx:id="addbtn" layoutX="84.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Add" />
+      <Button fx:id="cancelbtn" layoutX="253.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Cancel" />
    </children>
 </AnchorPane>
