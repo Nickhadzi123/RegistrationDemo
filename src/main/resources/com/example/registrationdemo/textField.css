@@ -1,9 +1,11 @@
 /* Valid TextField style */
 .text-field-valid {
-    -fx-border-color: grey; /* Green border for valid input */
+    -fx-border-color: grey;
+    /* Green border for valid input */
 }
 
 /* Invalid TextField style */
 .text-field-invalid {
-    -fx-border-color: red; /* Red border for invalid input */
+    -fx-border-color: red;
+    /* Red border for invalid input */
 }
