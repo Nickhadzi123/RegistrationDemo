@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registrationdemo.HelloController">
+   <children>
+      <VBox layoutX="39.0" layoutY="90.0" prefHeight="175.0" prefWidth="126.0">
+         <children>
+            <Label text="First Name : ">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Last Name : ">
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="42.0" text="Email : ">
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Date of Birth : ">
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Zip Code : ">
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="165.0" layoutY="90.0" prefHeight="213.0" prefWidth="175.0">
+         <children>
+            <TextField fx:id="firstNameField" promptText="First Name">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="lastNameField" promptText="Last Name">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="emailField" promptText="Email">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="dateOfBirthField" promptText="DOB">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="zipCodeField" promptText="Zip">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <Label layoutX="84.0" text="Registration Form">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="addbtn" layoutX="102.0" layoutY="291.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Add" />
+      <Button fx:id="cancelbtn" layoutX="240.0" layoutY="291.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Cancel" />
+      <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="54.0" prefHeight="17.0" prefWidth="306.0" textAlignment="CENTER" textFill="#f50303" />
+   </children>
+</AnchorPane>
