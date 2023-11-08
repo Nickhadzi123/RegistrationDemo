@@ -1,0 +1,9 @@
+/* Valid TextField style */
+.text-field-valid {
+    -fx-border-color: lightgreen; /* Green border for valid input */
+}
+
+/* Invalid TextField style */
+.text-field-invalid {
+    -fx-border-color: red; /* Red border for invalid input */
+}
